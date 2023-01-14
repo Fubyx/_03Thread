@@ -1,0 +1,10 @@
+F1;Welche Industrie ist für die meisten Emissionen verantwortlich?;;;;Energieindustrie;Noch einmal würfeln;;;;
+F2;Welche Länder sind am stärksten von der Klimaerwärmung bedroht?;Länder am Meer;Länder nahe dem Äquator
+F3;Welche Energiequelle könnte in Zukunft zusätzlich zu fossilen Brennstoffen und Strom als Mittel für die Betreibung von Fahrzeugen dienen?;Wasserstoff;-5 EcoScore;+5 EcoScore
+M;Was ist die größte Quelle der Treibhausgase unter diesen Optionen?;Transportation;Landwirtschaft;Industrie(Noch einmal würfeln);Abfall
+S;Wie viel würde das Beenden des Welthungers bis 2030 nach verschiedenen Studien zusätzlich jährlich kosten? (Derzeit gibt die internationale Gesellschaft jährlich 12 Milliarden Dollar aus) (Antwort in Milliarden Dollar);14;+-5;-5 EcoScore
+O1;Wie ist deine Meinung zur Frauenquote bzw. zu einer Geschlechterquote?(offene Frage);100 Geld/Monat;500 Geld/Monat
+O2;Finde gemeinsam mit einem Mitspieler deiner Wahl 5 Dinge, die du in deinem Alltag ändern könntest, um nachhaltiger zu leben. (Der Mitspieler erhält 50% der Belohnung)(offene Frage);Belohnung pro Änderung;500
+E;Autounfall;Du wurdest in einen Autounfall verwickelt und hast dir ein Bein gebrochen. Gehe sofort ins Krankenhaus. Zusätzlich werden deine nächsten zwei Würfelzüge halbiert.
+B;Arzt;Stadt;U
+B;Bauer;Land
