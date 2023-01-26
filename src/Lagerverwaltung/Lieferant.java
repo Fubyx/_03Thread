@@ -28,3 +28,5 @@ public class Lieferant extends Thread {
         }
     }
 }
+
+/*wenn man den synchronized block nehme, dann wird ja das gesamte Objekt gesperrt, dann ist es teilweise nicht so performant*/

@@ -2,7 +2,7 @@ package Lagerverwaltung;
 
 public class Lager {
     private int bestand;
-    protected volatile boolean wirdBeliefert = false;
+    //protected volatile boolean wirdBeliefert = false;
 
     public int getBestand() {
         return bestand;
