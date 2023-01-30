@@ -6,7 +6,7 @@ public class Parkhaus {
     Parkhaus(int freeSpaces){
         this.freeSpaces = freeSpaces;
     }
-    public synchronized boolean park (Auto a){
+    public synchronized boolean park (){
         if(freeSpaces > 0){
             --freeSpaces;
             System.out.println("Auto geparkt " + freeSpaces + "übrig");
@@ -18,7 +18,7 @@ public class Parkhaus {
 
     }
 
-    public void leave (){
+    public synchronized void leave (){
         ++freeSpaces;
         System.out.println("Auto ausgeparkt " + freeSpaces + "übrig");
     }

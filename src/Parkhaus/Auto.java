@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Auto extends Thread{
     Parkhaus p;
-    boolean parked = false;
 
     Auto(Parkhaus p){
         this.p = p;
@@ -15,8 +14,7 @@ public class Auto extends Thread{
     public void run (){
         do{
             driveAround();
-            if(p.park(this)){
-                parked = true;
+            if(p.park()){
                 break;
             }
             try {
@@ -24,11 +22,7 @@ public class Auto extends Thread{
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            if(p.park(this)){
-                parked = true;
-                break;
-            }
-        }while(!p.park(this));
+        }while(!p.park());
         try {
             sleep(new Random().nextInt(1, 10) * 10000L);
         } catch (InterruptedException e) {
