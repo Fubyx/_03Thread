@@ -22,7 +22,7 @@ public class Ampel {
             }
         }
         try {
-            Thread.sleep((int)Math.random()*500);
+            Thread.sleep((int)(Math.random()*500));
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
