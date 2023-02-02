@@ -5,22 +5,20 @@ public class Ampel {
     public void setRed(){
         red = true;
     }
-    public void setGreen() {
-        synchronized (red){
-            red.notifyAll();
+    public synchronized void setGreen() {
             red = false;
-        }
+            notify();
+            notify();
     }
-    public void pass (){
-        synchronized (red){
+    public synchronized void pass (){
             while(red){
                 try {
-                    red.wait();
+                    wait();
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
             }
-        }
+
         try {
             Thread.sleep((int)(Math.random()*500));
         } catch (InterruptedException e) {
